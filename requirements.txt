@@ -30,12 +30,10 @@ emails==0.5.15
 fastapi==0.70.1
 gunicorn==20.1.0
 h11==0.9.0
-httptools==0.1.2
 idna==3.4
 inflect==5.6.2
 Jinja2==2.11.3
 kombu==4.6.11
-lxml==4.9.2
 Mako==1.2.4
 MarkupSafe==2.1.2
 more-itertools==9.1.0
@@ -50,6 +48,7 @@ pyasn1==0.4.8
 pycparser==2.21
 pydantic==1.10.6
 PyJWT==2.6.0
+
 pytest==5.4.3
 python-dateutil==2.8.2
 python-jose==3.3.0

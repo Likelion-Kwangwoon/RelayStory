@@ -52,6 +52,29 @@ class RegisterAPIView(APIView):
             return res
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
+@api_view(['GET'])
+def refreshToken(request):
+    try:
+        # access token을 decode 해서 유저 id 추출 => 유저 식별
+        access = request.META['HTTP_AUTHORIZATION'][7:]  # Bearer 뺀게 7부터
+        payload = jwt.decode(access, SECRET_KEY, algorithms=['HS256'])
+
+        email = payload.get('email')
+        print(email)
+        user = get_object_or_404(User, email=email)
+        token = TokenObtainPairSerializer.get_token(user)
+        access_token = str(token.access_token)
+        res = Response(
+            {
+                "access": access_token
+            },
+            status=status.HTTP_200_OK,
+        )
+        return res
+    except Exception as e:
+        print(e)
+        return Response(e, status=status.HTTP_400_BAD_REQUEST)
 class AuthAPIView(APIView):
     # 유저 정보 확인
     def get(self, request):
@@ -167,31 +190,32 @@ def signin(request):
             return res
         except:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    #
-    #return Response(res.json()['properties']['nickname'])
 
 
 def retToken(user):
-    token = TokenObtainPairSerializer.get_token(user)
-    refresh_token = str(token)
-    access_token = str(token.access_token)
-    res = Response(
-        {
-            "user": {
-                "email":user.email,
-                "nickname":user.nickname
+    try:
+        token = TokenObtainPairSerializer.get_token(user)
+        refresh_token = str(token)
+        access_token = str(token.access_token)
+        res = Response(
+            {
+                "user": {
+                    "email":user.email,
+                    "nickname":user.nickname
+                },
+                "message": "register successs",
+                "token": {
+                    "access": access_token,
+                    "refresh": refresh_token,
+                },
             },
-            "message": "register successs",
-            "token": {
-                "access": access_token,
-                "refresh": refresh_token,
-            },
-        },
-        status=status.HTTP_200_OK,
-    )
+            status=status.HTTP_200_OK,
+        )
 
-    # jwt 토큰 => 쿠키에 저장
-    res.set_cookie("access", access_token, httponly=True)
-    res.set_cookie("refresh", refresh_token, httponly=True)
+        # jwt 토큰 => 쿠키에 저장
+        res.set_cookie("access", access_token, httponly=True)
+        res.set_cookie("refresh", refresh_token, httponly=True)
 
-    return res
+        return res
+    except Exception as e:
+        return Response(e, status=status.HTTP_400_BAD_REQUEST)

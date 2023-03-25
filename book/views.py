@@ -13,10 +13,17 @@ from user.models import *
 
 @api_view(['GET'])
 def allBooks(request):
-    books=Book.object.all()
+    try:
+        responseData = []
+        books=Book.object.all()
+        for b in books:
+            comments = Comment.object.filter(book=b)
+            book={"book":BookSerializer(b,many=False).data,"comments":CommentSerializer(comments,many=True).data}
+            responseData.append(book)
 
-    return Response(books, status=status.HTTP_200_OK)
-
+        return Response(responseData, status=status.HTTP_200_OK)
+    except Exception as e:
+        return Response(e, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['GET'])
 def getBook(request):
@@ -30,8 +37,8 @@ def getBook(request):
         print(email)
         user = get_object_or_404(User, email=email)
         serializer = UserSerializer(instance=user)
-    except:
-        pass
+    except Exception as e:
+        return Response(e, status=status.HTTP_400_BAD_REQUEST)
     books=Book.object.filter(user=user)
     responseData=[]
     for b in books:
@@ -40,8 +47,6 @@ def getBook(request):
         responseData.append(book)
 
     return Response(responseData, status=status.HTTP_200_OK)
-
-
 
 @api_view(['POST'])
 def postBook(request):
@@ -80,7 +85,8 @@ def postBook(request):
             if commentSerializer.is_valid(raise_exception=True):
                 commentSerializer.save()
 
+
     except Exception as e:
-        print(e)
+        return Response(e, status=status.HTTP_400_BAD_REQUEST)
 
     return Response("Success")
