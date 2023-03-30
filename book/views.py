@@ -48,6 +48,13 @@ def getBook(request):
 
     return Response(responseData, status=status.HTTP_200_OK)
 
+@api_view(['GET'])
+def getBookById(request):
+    bookId=request.GET["bookId"]
+    book=Book.object.get(pk=bookId)
+    comments = Comment.object.filter(book=book)
+    responseData = {"book": BookSerializer(book, many=False).data, "comments": CommentSerializer(comments, many=True).data}
+    return Response(responseData, status=status.HTTP_200_OK)
 @api_view(['POST'])
 def postBook(request):
     try:
@@ -84,9 +91,25 @@ def postBook(request):
             commentSerializer=CommentSerializer(data=data)
             if commentSerializer.is_valid(raise_exception=True):
                 commentSerializer.save()
+                return Response(book.pk, status=status.HTTP_201_CREATED)
 
 
     except Exception as e:
         return Response(e, status=status.HTTP_400_BAD_REQUEST)
 
-    return Response("Success")
+    return Response("error",status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['POST'])
+def postComment(request):
+    try:
+        data = {
+            "book": request.data["bookId"],
+            "nickname": request.data["nickname"],
+            "content": request.data["content"]
+        }
+        commentSerializer = CommentSerializer(data=data)
+        if commentSerializer.is_valid(raise_exception=True):
+            commentSerializer.save()
+    except Exception as e:
+            return Response(e, status=status.HTTP_400_BAD_REQUEST)
+    return Response(request.data["bookId"],status=status.HTTP_201_CREATED)
