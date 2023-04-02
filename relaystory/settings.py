@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.auth0',
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.kakao',
+    'sslserver'
     
 ]
 # user 앱에서 내가 설정한 User를 사용하겠다고 설정한다.
