@@ -159,7 +159,7 @@ def hello(request):
 @api_view(['GET'])
 def signin(request):
     print(request.GET["code"])
-    url1='https://kauth.kakao.com/oauth/token?grant_type=authorization_code&client_id=5e90fdaec3d61d8cc6ec0616fa4d8ff2&client_secret=Bmp1KrvsloFcwxSj0G5F8Kd8guPU3Fn7&redirect_uri=https://relay-story.netlify.app/oauth&code='+request.GET["code"]
+    url1='https://kauth.kakao.com/oauth/token?grant_type=authorization_code&client_id=5e90fdaec3d61d8cc6ec0616fa4d8ff2&client_secret=Bmp1KrvsloFcwxSj0G5F8Kd8guPU3Fn7&redirect_uri=http://localhost:3000/oauth&code='+request.GET["code"]
     headers= {'Content-type': 'application/x-www-form-urlencoded;charset=utf-8'}
     res = requests.get(url1, headers=headers)
     print(res.json())
