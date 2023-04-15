@@ -218,8 +218,8 @@ def retToken(user):
 
         print("1")
         # jwt 토큰 => 쿠키에 저장
-        res.set_cookie("access", access_token, httponly=True)
-        res.set_cookie("refresh", refresh_token, httponly=True)
+        # res.set_cookie("access", access_token, httponly=True)
+        # res.set_cookie("refresh", refresh_token, httponly=True)
 
         return res
     except Exception as e:
