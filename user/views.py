@@ -181,14 +181,14 @@ def signin(request):
 
         res=retToken(user)
 
-        return Response(res, status=status.HTTP_200_OK)
+        return Response(str(res), status=status.HTTP_200_OK)
     else:
         try:
             user=User.objects.get(email=res.json()['kakao_account']['email'])
             print(user.nickname)
             print(user.email)
             res = retToken(user)
-            return Response(res, status=status.HTTP_200_OK)
+            return Response(str(res), status=status.HTTP_200_OK)
         except:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
