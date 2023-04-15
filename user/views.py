@@ -204,8 +204,7 @@ def retToken(user):
         print("1")
         access_token = str(token.access_token)
         print("1")
-        res = Response(
-            {
+        res ={
                 "user": {
                     "email":user.email,
                     "nickname":user.nickname
@@ -215,9 +214,8 @@ def retToken(user):
                     "access": access_token,
                     "refresh": refresh_token,
                 },
-            },
-            status=status.HTTP_200_OK,
-        )
+            }
+
         print("1")
         # jwt 토큰 => 쿠키에 저장
         res.set_cookie("access", access_token, httponly=True)
