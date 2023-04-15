@@ -180,9 +180,10 @@ def signin(request):
         print(user.email)
 
         res=retToken(user)
-
+        print(res)
         return Response(str(res), status=status.HTTP_200_OK)
     else:
+        print("generate token error")
         try:
             user=User.objects.get(email=res.json()['kakao_account']['email'])
             print(user.nickname)
@@ -219,4 +220,4 @@ def retToken(user):
 
         return res
     except Exception as e:
-        return Response(e, status=status.HTTP_400_BAD_REQUEST)
+        return "token"
