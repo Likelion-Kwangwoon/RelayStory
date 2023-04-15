@@ -189,6 +189,7 @@ def signin(request):
             print(user.nickname)
             print(user.email)
             res = retToken(user)
+            print(res)
             return Response(str(res), status=status.HTTP_200_OK)
         except:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
