@@ -196,9 +196,13 @@ def signin(request):
 
 def retToken(user):
     try:
+        print("1")
         token = TokenObtainPairSerializer.get_token(user)
+        print("1")
         refresh_token = str(token)
+        print("1")
         access_token = str(token.access_token)
+        print("1")
         res = Response(
             {
                 "user": {
@@ -213,7 +217,7 @@ def retToken(user):
             },
             status=status.HTTP_200_OK,
         )
-
+        print("1")
         # jwt 토큰 => 쿠키에 저장
         res.set_cookie("access", access_token, httponly=True)
         res.set_cookie("refresh", refresh_token, httponly=True)
