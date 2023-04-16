@@ -211,7 +211,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:9000",
     "http://localhost:3000",
     "https://localhost:3000",
-    "https://relay-story-site.netlify.app"
+    "https://relay-story-site.netlify.app",
     "https://relay-story.site"
 
 ]
