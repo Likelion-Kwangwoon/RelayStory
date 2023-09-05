@@ -1,6 +1,8 @@
 # team2-BE
-
-
+| 개발기  |
+| ------ |
+|[Django 서비스 레이어](https://velog.io/@chs98412/Django-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A0%88%EC%9D%B4%EC%96%B4)|
+|[Django 리포지토리 레이어 분리](https://velog.io/@chs98412/Django-%EB%A6%AC%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EB%A0%88%EC%9D%B4%EC%96%B4-%EB%B6%84%EB%A6%AC)|
 # 🔥 Git 규칙 
 
 ## ① 브랜치(branch) 이름 
